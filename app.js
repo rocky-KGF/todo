@@ -29,7 +29,7 @@ var un=""
 var uname =""
 
 app.get("/",function(req,res){
-    res.sendFile(__dirname+"\\user.html")
+    res.sendFile(__dirname+"\\views\\user.html")
 })
 
 app.get("/:type",function(req,res){
