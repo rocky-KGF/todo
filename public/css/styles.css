@@ -1,0 +1,97 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #393e46;
+    text-align: center;
+}
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2%;
+}
+.logout,.add{
+    text-decoration: none;
+    padding: 8px 15px;
+    background-color: white;
+    color: #393e46;
+    border-radius: 20px;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+}
+h1{
+    font-family: 'Open Sans',sans-serif;
+    font-size: 40px;
+    color: white;
+    margin-right: 15px;
+}
+h2{
+    margin: 3% 0 3% 0;
+    font-family: 'Open Sans',sans-serif;
+    font-size: 20px;
+    color: white;
+}
+.list{
+    padding: 10px 10px 0 10px;
+    margin: auto;
+    min-width: 300px;
+    width: 50%;
+    border: white 1px solid;
+}
+.fa-plus-circle{
+    margin-top: 5%;
+    margin-right:10%;
+}
+.enter{
+    min-width: 300px;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: large;
+    box-shadow: 0 0 8px 3px grey;
+}
+.enter:focus{
+    outline: none;
+}
+.enter,.add{
+    margin-bottom: 3%;
+}
+i{
+    cursor: pointer;
+}
+p{
+    margin-top: 0rem;
+    display: inline-block;
+    color: white;
+}
+.fa-circle,.fa-check-circle{
+    color: white;
+   
+    float: left;
+}
+.fa-trash-alt:hover{
+    color: red;
+}
+.line_through{
+    color: grey;
+    text-decoration: line-through;
+    text-decoration-color: grey;
+}
+.fa-trash-alt{
+    
+    float: right;
+}
+
+@media screen and (max-width: 767px){
+    header{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    h1{
+        font-size: large;
+    }
+    .logout{
+        font-size: medium;
+    }
+}

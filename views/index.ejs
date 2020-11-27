@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-do</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/10e265859f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <h1><%= user%>'s TODO</h1>
+        <a href="/logout" class="logout">LOGOUT</a>
+    </header>
+    <div class="list">
+        <% var i %>
+        <% for(i=0;i<items.length;i++){ %>
+            <div>
+                <i class="fa fa-circle"></i>
+                <p class=""><%= items[i] %></p>
+                <a href="/<%= items[i] %>" style="color: red"><i class="fa fa-trash-alt"></i></a><br>
+            </div>
+        <% } %>
+    </div><br>
+    <div>
+   
+    <h2>Type here what to do today?</h2><br>
+    <form action="/add" method="POST">
+    <input class="enter" type="textarea" name="matter" placeholder="What's Interesting..."><br>
+    <button type="submit" class="add" name="listarea">Add</button>
+    </form>
+    </div>
+    
+</body>
+<script src="index.js" charset="utf-8"></script>
+</html>

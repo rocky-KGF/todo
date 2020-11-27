@@ -1,0 +1,60 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access</title>
+    <link rel="stylesheet" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amaranth&family=Indie+Flower&family=Roboto+Mono:wght@500&family=Ubuntu&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <div><img  class="wel" src="images/YM.png" alt=""></div>
+            <h2>Connect...Mark...Done</h2>
+        </div>
+        <div class="right">
+            <div class="rh">
+                <div><img src="images/YM.png" alt="" class="mob"></div>
+                <h1>YOUR TODO</h1>
+            </div>
+            <p class="head">LogIn To YOUR TODO</p>
+            <div class="forms">
+                <form action="/signin" method="POST" class="signin">
+                    <p>Username</p>
+                    <input type="text" name="un" id="">
+                    <p>Password</p>
+                    <input type="password" name="ps" id="">
+                    <div class="fp">
+                        <a href=""><p>Forgot Password?</p></a>
+                    </div>
+                    <input type="submit" value="Sign In" class="submit">
+                </form>
+                <form action="/register" method="POST" class="register">
+                        <p>First Name&nbsp;&nbsp;<span>*</span></p>
+                        <input type="text" name="fn" id="" required>
+                        <p>Second Name&nbsp;&nbsp;<span>*</span></p>
+                        <input type="text" name="sn" id="" required>
+                        <p>Username&nbsp;&nbsp;<span>*</span></p>
+                        <input type="text" name="un" id="" required>
+                        <p>Password&nbsp;&nbsp;<span>*</span></p>
+                        <input type="password" name="ps" id="" required>
+                        <p>Email</p>
+                        <input type="email" name="em" id="">
+                        <input type="submit" value="Register" class="submit">
+                </form>
+            </div>
+            <div class="or">
+                <div><hr></div><p>or</p><div><hr></div>
+            </div>
+            <div class="logos">
+                <div class="log"><img class="ig" src="images/google.svg" alt=""></div>
+                <div class="log"><img class="ig" src="images/facebook.svg" alt=""></div>
+                <div class="log"><img class="ig" src="images/twitter.svg" alt=""></div>
+            </div>
+            <p class="n">New To Yaar Me? <b class="new">&nbsp;Create Account</b></p>
+            <p class="l" style="display: none;">Already Have An Account?<b class="ll">&nbsp;Login Here</b></p>
+        </div>
+    </div>
+    <script src="user.js"></script>
+</body>
+</html>

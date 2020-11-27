@@ -1,0 +1,230 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    height: 100%;
+}
+.left{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fe4967;
+    height: 100%;
+    overflow: hidden;
+}
+.wel{
+    height: 500px;
+    width: 500px;
+}
+.right{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+.new,.l{
+    cursor: pointer;
+}
+h1{
+    font-family: 'Amaranth', sans-serif;
+    margin-top: 5%;
+}
+h2{
+    font-family: 'Roboto Mono', monospace;
+    color: white;
+}
+form{
+    align-self: center;
+}
+form span{
+    color: red;
+    font-family: 'Ubuntu', sans-serif;
+}
+form p{
+    margin-bottom: 8px;
+}
+.forms{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.register{
+    display: none;
+}
+.next{
+    display: block;
+    margin: auto;
+}
+input[type=text],input[type=password],input[type=email],input[type=date]{
+    width: 100%;
+    border: none;
+    padding: 10px 8px 5px 8px;
+    border-bottom: 1px solid #DDDDDD;
+    font-size: 1.3rem;
+    transition: 0.5s;
+}
+input:focus{
+    outline: none;
+    border-color: #fe4967;
+}
+.head{
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.8rem;
+    text-align: center;
+    width: 80%;
+    margin: 30px auto 50px auto;
+}
+.fp{
+    font-size: 0.8rem;
+    margin: 8px 0;
+    padding-bottom: 20px;
+}
+.fp a{
+    float: right;
+    text-decoration: none;
+    
+}
+input[type=submit]{
+    width: 100%;
+    margin-top: 15px;
+    background: none;
+    border: 0;
+    padding: 8px 8%;
+    background-color: #fe4967;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.navi{
+    text-decoration: none;
+    padding: 8px 20px;
+    background-color: #fe4967;
+    border-radius: 30px;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.navi{
+    margin: 0 30px;
+}
+.or{
+    display: flex;
+    margin: 20px 0;
+}
+.or hr{
+    width: 100px;
+    border-color: #fe4967;
+    opacity: 0.5;
+}
+.or p{
+    font-family: 'Ubuntu', sans-serif;
+    margin: 0 8px;
+}
+.logos{
+    display: flex;
+    margin-bottom: 10px;
+}
+.log{
+    margin: 0 20px;
+    cursor: pointer;
+}
+.ig:hover{
+    box-shadow: 0 5px 6px 0px #DDDDDD;
+}
+.ig{
+    height: 30px;
+    width: 30px;
+}
+.steps{
+    font-size: 1.3rem;
+    text-align: center;
+}
+form p,.n,.l,.steps{
+    font-family: 'Ubuntu', sans-serif;
+}
+.rh{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3%;
+}
+.mob{
+    height: 50px;
+    width: 50px;
+    border-radius: 30px;
+    display: none;
+}
+.edu{
+    font-size: 1.2rem;
+    font-family:  'Ubuntu', sans-serif;;
+}
+.ab:hover,.ee:hover,.job:hover{
+    cursor: pointer;
+    padding: 5px 10px;
+}
+.r2,.r3,.r4,.r5,.r6{
+    display: none;
+}
+.r5,.r6{
+    padding: 0 50px;
+}
+@media screen and (max-width: 1024px){
+    .wel{
+        height: 250px;
+        width: 250px;
+    }
+    h2{
+        font-size: 1rem;
+    }
+}
+@media screen and (min-height: 1024px){
+    .right{
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 760px){
+    .container{
+        flex-direction: column;
+    }
+    .left{
+       display: none;
+    }
+    .mob{
+        display: inline-block;
+    }
+    .right{
+        width: 100%;
+        overflow: visible;
+    }
+    h1{
+        margin: 0 8px;
+    }
+    .head{
+        margin-bottom: 30px;
+    }
+    .register{
+        width: 80%;
+        margin: auto;
+        margin-bottom: 20px;
+    }
+    .l{
+        text-align: center;
+    }
+    input[type=submit]{
+        display: block;
+        margin: auto;
+    }
+    .r1,.r2,.r3,.r4,.r5,.r6{
+        width: 100%;
+        padding: 0;
+    }
+}
