@@ -21,6 +21,8 @@ const userSchema=mongoose.Schema({
     Email: String 
 })
 
+console.log("directory is  " + __dirname)
+
 const td = mongoose.model("todo",todoSchema)
 const user = mongoose.model("user",userSchema)
 
