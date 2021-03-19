@@ -2,7 +2,7 @@ const express = require("express")
 const bodyParser=require("body-parser")
 const mongoose = require("mongoose")
 
-mongoose.connect("mongodb+srv://bsk123:U2hK4TZuXgvjzXw@cluster0.i0cdc.mongodb.net/bskTODO",{useNewUrlParser:true,useUnifiedTopology:true})
+mongoose.connect("mongodb+srv://bsk123:WkQ9Xp1GjOonGkPO@cluster0.i0cdc.mongodb.net/bskTODO",{useNewUrlParser:true,useUnifiedTopology:true})
 
 const app = express()
 app.set("view engine","ejs")
